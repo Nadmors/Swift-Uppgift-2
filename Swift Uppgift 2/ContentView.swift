@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Swift Uppgift 2
 //
-//  Created by Nadja on 2023-11-17.
+//  Created by Nadja Morin on 2023-11-17.
 //
 
 import SwiftUI
