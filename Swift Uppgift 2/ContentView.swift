@@ -28,9 +28,8 @@ struct ContentView: View {
                 }, label:{
                     Text("Lägg till")
                         .fontWeight(.bold)
-                        .padding()       .foregroundColor(.white)
-                        .background(Color.blue)
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                        .padding()      
+                        .foregroundColor(.white)
                 })
                 
             }
