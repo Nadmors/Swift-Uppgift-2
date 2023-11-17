@@ -15,14 +15,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-                        
+            
             HStack{
                 TextField("Skriv namn", text: $nameofperson)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                   .padding()
-                                                    
+                    .padding()
+                
                 Button(action:{
-                        
+                    
                     people.append(nameofperson)
                     nameofperson = ""
                 }, label:{
@@ -31,11 +31,8 @@ struct ContentView: View {
                         .padding()       .foregroundColor(.white)
                         .background(Color.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
-                    
-                    
-                }
-                )
-                    
+                })
+                
             }
             
         }
@@ -43,10 +40,10 @@ struct ContentView: View {
         .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
         List (people, id:\.self){ person in
             Text (person)
-            }
+        }
         
         if people.isEmpty == false {
-        //om något finns i listan visas knappen Nollställ, annars inte
+            //om något finns i listan visas knappen Nollställ, annars inte
             Button(action: {
                 people = []
             }, label: {
@@ -56,12 +53,9 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-                    
+                
             })
         }
-       
-        
-        
     }
 }
 
